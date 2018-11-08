@@ -4,27 +4,27 @@ class Show < ActiveRecord::Base
     Show.maximum ('rating')
   end
   
-  def most_popular_show
+  def Show::most_popular_show
     
   end
   
-  def lowest_rating
-    
+  def Show::lowest_rating
+    Show.minimun('rating')
   end
   
-  def least_popular_show
+  def Show::least_popular_show
     
   end 
   
-  def rating_sum
+  def Show::rating_sum
+    Show.sum('rating')
+  end 
+  
+  def Show::popular_shows
     
   end 
   
-  def popular_shows
-    
-  end 
-  
-  def shows_by_alphabetical_order
+  def Show::shows_by_alphabetical_order
     
   end 
 end
